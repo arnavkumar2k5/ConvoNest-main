@@ -41,7 +41,7 @@ function ContactsContainer() {
       try {
         console.log("Fetching contacts...");
         const response = await axios.get(
-          "http://localhost:/api/v1/channels/get-user-channels",
+          "https://convonest-mn3l.onrender.com/api/v1/channels/get-user-channels",
           {
             withCredentials: true,
           }
