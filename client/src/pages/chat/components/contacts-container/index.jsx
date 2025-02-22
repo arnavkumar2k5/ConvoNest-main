@@ -16,7 +16,7 @@ function ContactsContainer() {
       try {
         console.log("Fetching contacts...");
         const response = await axios.get(
-          "http://localhost:8000/api/v1/contacts/get-contacts-for-dm",
+          "https://convonest-mn3l.onrender.com/api/v1/contacts/get-contacts-for-dm",
           {
             withCredentials: true,
           }
@@ -41,7 +41,7 @@ function ContactsContainer() {
       try {
         console.log("Fetching contacts...");
         const response = await axios.get(
-          "http://localhost:8000/api/v1/channels/get-user-channels",
+          "http://localhost:/api/v1/channels/get-user-channels",
           {
             withCredentials: true,
           }

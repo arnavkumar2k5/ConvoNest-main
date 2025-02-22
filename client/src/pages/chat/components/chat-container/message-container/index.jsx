@@ -57,7 +57,7 @@ function MessageContainer() {
   useEffect(() => {
     const getMessages = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/v1/messages/get-messages`, {
+        const response = await axios.get(`https://convonest-mn3l.onrender.com/api/v1/messages/get-messages`, {
           params: { id: selectedChatData._id },
           withCredentials: true,
         });
@@ -76,7 +76,7 @@ function MessageContainer() {
     const getChannelMessages = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/v1/channels/get-channel-messages/${selectedChatData._id}`,
+          `http://localhost:/api/v1/channels/get-channel-messages/${selectedChatData._id}`,
           { withCredentials: true }
         );
 

@@ -26,7 +26,7 @@ function ProfileInfo() {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/v1/users/me", {
+        const response = await axios.get("https://convonest-mn3l.onrender.com/api/v1/users/me", {
           withCredentials: true,
         });
         console.log("bhaiya aa gaya:- ", response.data.data);
@@ -59,7 +59,7 @@ function ProfileInfo() {
         <Avatar className="h-12 w-12 rounded-full overflow-hidden">
           {image ? (
             <AvatarImage
-              src={`http://localhost:8000/${image}`}
+              src={`https://convonest-mn3l.onrender.com/${image}`}
               alt="profile"
               className="object-cover w-full h-full bg-black"
             />

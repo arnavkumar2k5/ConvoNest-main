@@ -20,7 +20,7 @@ function NewDm() {
     const searchContacts = async(searchTerm) => {
       try {
         if(searchTerm.length>0){
-          const response = await axios.patch(`http://localhost:8000/api/v1/contacts/search`, {searchTerm}, { withCredentials: true });
+          const response = await axios.patch(`https://convonest-mn3l.onrender.com/api/v1/contacts/search`, {searchTerm}, { withCredentials: true });
 
           console.log(response)
           if(response.status === 200 && response.data.contacts){

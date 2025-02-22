@@ -8,7 +8,7 @@ const app = express();
 const _dirname = path.resolve();
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://convonest-mn3l.onrender.com",
     credentials: true,
     methods: "GET,POST,PUT,DELETE",
         allowedHeaders: "Content-Type,Authorization",

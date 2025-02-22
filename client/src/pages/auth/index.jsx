@@ -34,7 +34,7 @@ function Auth() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/users/login",
+        "https://convonest-mn3l.onrender.com/api/v1/users/login",
         { identifier, password },
         { withCredentials: true }
       );
@@ -51,7 +51,7 @@ function Auth() {
   const handleSignUp = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("http://localhost:8000/api/v1/users/register", formData, {
+      const response = await axios.post("https://convonest-mn3l.onrender.com/api/v1/users/register", formData, {
         withCredentials: true,
       });
       setMessage(response.data.message || "User registered successfully!");

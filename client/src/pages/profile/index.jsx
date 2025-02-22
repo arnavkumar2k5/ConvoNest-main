@@ -30,7 +30,7 @@ function Profile() {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/v1/users/me", {
+        const response = await axios.get("https://convonest-mn3l.onrender.com/api/v1/users/me", {
           withCredentials: true,
         });
         console.log("bhaiya aa gaya:- ", response.data.data);
@@ -57,14 +57,14 @@ function Profile() {
   const saveChanges = async () => {
     try {
         const response = await axios.post(
-            "http://localhost:8000/api/v1/users/update-account",
+            "https://convonest-mn3l.onrender.com/api/v1/users/update-account",
             { fullName, username },
             { withCredentials: true }
         );
 
         if (response.status === 200) {
             // Get fresh user data after update
-            const updatedUserResponse = await axios.get("http://localhost:8000/api/v1/users/me", { 
+            const updatedUserResponse = await axios.get("https://convonest-mn3l.onrender.com/api/v1/users/me", { 
                 withCredentials: true 
             });
 
@@ -104,7 +104,7 @@ function Profile() {
       formData.append("avatar", file);
   
       try {
-        const response = await axios.post("http://localhost:8000/api/v1/users/avatar", formData, { withCredentials: true, headers: { "Content-Type": "multipart/form-data" }, });
+        const response = await axios.post("https://convonest-mn3l.onrender.com/api/v1/users/avatar", formData, { withCredentials: true, headers: { "Content-Type": "multipart/form-data" }, });
   
         if (response.status === 200 && response.data) {
           dispatch(login({ userData: response.data }));
@@ -126,7 +126,7 @@ function Profile() {
 
   const handleDeleteImage = async () => {
     try {
-      const response  = await axios.delete("http://localhost:8000/api/v1/users/delete-image", {withCredentials: true});
+      const response  = await axios.delete("https://convonest-mn3l.onrender.com/api/v1/users/delete-image", {withCredentials: true});
       
       if (response.status === 200 && response.data) {
         dispatch(login({ userData: response.data }));
@@ -155,7 +155,7 @@ function Profile() {
           <Avatar className="h-36 w-36 md:w-48 md:h-48 rounded-full overflow-hidden">
             {image ? (
               <AvatarImage
-                src={`http://localhost:8000/${image}`}
+                src={`https://convonest-mn3l.onrender.com/${image}`}
                 alt="profile"
                 className="object-cover w-full h-full bg-black"
               />

@@ -53,7 +53,7 @@ export default function CreateChannel() {
       const createChannel = async()=>{
         try {
             if(channelName.length>0 && selectedContacts.length>0){
-                const response = await axios.post("http://localhost:8000/api/v1/channels/create-channel",
+                const response = await axios.post("https://convonest-mn3l.onrender.com/api/v1/channels/create-channel",
                     {
                         name: channelName,
                         members: selectedContacts.map((contact)=> contact.value),
