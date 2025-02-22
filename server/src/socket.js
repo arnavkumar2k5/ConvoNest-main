@@ -5,7 +5,7 @@ import { Channel } from "./models/channel.model.js";
 const setupSocket = (server) => {
     const io = new SocketIOServer(server, {
         cors: {
-            origin: ["http://localhost:5173"], // Allow frontend origin
+            origin: ["https://convonest-mn3l.onrender.com"], // Allow frontend origin
             methods: ["GET", "POST"],
             credentials: true
         },
