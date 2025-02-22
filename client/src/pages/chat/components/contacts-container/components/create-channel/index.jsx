@@ -34,7 +34,7 @@ export default function CreateChannel() {
     useEffect(() => {
         const getdata = async () => {
           try {
-            const response = await axios.get("http://localhost:8000/api/v1/contacts/get-all-contacts", { withCredentials: true });
+            const response = await axios.get("https://convonest-mn3l.onrender.com/api/v1/contacts/get-all-contacts", { withCredentials: true });
             console.log("Fetched Contacts:", response.data); // Debugging log
             if (response.data && response.data.contacts) {
               setallContacts(response.data.contacts);
