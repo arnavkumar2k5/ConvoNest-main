@@ -157,7 +157,7 @@ function MessageBar() {
     
 
     return (
-        <div className='h-[10vh] flex justify-center items-center px-8 my-2 gap-2'>
+        <div className='h-[10vh] flex justify-center items-center px-16 my-2 gap-2'>
             <div className='flex md:flex-1 border-2 border-[#E9EAEB] rounded-md items-center gap-2 pr-2'>
                 <input 
                     type="text" 

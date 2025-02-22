@@ -40,7 +40,6 @@ function Auth() {
       );
 
       dispatch(login({ userData: response.data }));
-      alert("Login Successful!");
       navigate("/chat");
     } catch (error) {
       console.error("Login Error: ", error);
