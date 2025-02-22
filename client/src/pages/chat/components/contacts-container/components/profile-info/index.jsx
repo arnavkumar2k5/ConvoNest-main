@@ -53,7 +53,7 @@ function ProfileInfo() {
   };
 
   return (
-    <div className="absolute bottom-0 h-20 left-0 md:h-16 flex items-center justify-center w-full md:w-[20%] bg-[#40C4FF]">
+    <div className="fixed bottom-0 h-20 left-0 md:h-16 flex items-center justify-center w-full md:w-[20%] bg-[#40C4FF]">
       <div className="flex gap-3 items-center justify-center">
         <div className="w-12 h-12 relative">
         <Avatar className="h-12 w-12 rounded-full overflow-hidden">

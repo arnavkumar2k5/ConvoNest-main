@@ -161,7 +161,7 @@ function Profile() {
               />
             ) : (
               <div
-                className={`uppercase h-32 w-32 md:w-48 md:h-48 text-5xl border-[1px] flex items-center justify-center rounded-full ${getColor(
+                className={`uppercase h-36 w-36 md:w-48 md:h-48 text-5xl border-[1px] flex items-center justify-center rounded-full ${getColor(
                   selectedColor
                 )}`}
               >
@@ -173,7 +173,7 @@ function Profile() {
           </Avatar>
           {hovered && (
             <div
-              className="absolute inset-0 flex items-center justify-center bg-black/50 rounded-full cursor-pointer"
+              className="absolute inset-0 -ml-2 h-36 w-36 md:h-auto md:w-auto md:-ml-0 flex items-center justify-center bg-black/50 rounded-full cursor-pointer"
               onClick={image ? handleDeleteImage : handleFileInputClick}
             >
               {image ? (
