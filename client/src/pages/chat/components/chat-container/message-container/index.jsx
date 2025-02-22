@@ -76,7 +76,7 @@ function MessageContainer() {
     const getChannelMessages = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:/api/v1/channels/get-channel-messages/${selectedChatData._id}`,
+          `https://convonest-mn3l.onrender.com/api/v1/channels/get-channel-messages/${selectedChatData._id}`,
           { withCredentials: true }
         );
 
