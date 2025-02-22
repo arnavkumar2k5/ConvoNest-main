@@ -161,7 +161,7 @@ function MessageBar() {
             <div className='flex md:flex-1 border-2 border-[#E9EAEB] rounded-md items-center gap-2 pr-2'>
                 <input 
                     type="text" 
-                    className='flex-1 p-5 bg-transparent text-black rounded-md border-none outline-none' 
+                    className='flex-1  p-3 md:p-5 bg-transparent text-black rounded-md border-none outline-none' 
                     placeholder='Enter Message' 
                     value={message} 
                     onChange={(e) => setMessage(e.target.value)}
@@ -187,7 +187,7 @@ function MessageBar() {
                 </div>
             </div>
             <button 
-                className='bg-[#40C4FF] rounded-md flex items-center justify-center p-5 focus:border-none hover:bg-[#03A9F4] focus:bg-[#03A9F4] focus:outline-none focus:text-white duration-300 transition-all' 
+                className='bg-[#40C4FF] rounded-md flex items-center justify-center  p-3 md:p-5 focus:border-none hover:bg-[#03A9F4] focus:bg-[#03A9F4] focus:outline-none focus:text-white duration-300 transition-all' 
                 onClick={handleSendMessage}
             >
                 <IoSend className='text-2xl'/>
