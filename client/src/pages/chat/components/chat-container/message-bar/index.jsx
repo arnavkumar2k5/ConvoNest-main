@@ -161,7 +161,7 @@ function MessageBar() {
             <div className='flex md:flex-1 border-2 border-[#E9EAEB] rounded-md items-center gap-2 pr-2'>
                 <input 
                     type="text" 
-                    className='flex-1 p-5 bg-transparent text-black rounded-md border-none outline-none w-3/4 md:w-auto overflow-x-hidden' 
+                    className='flex-1 p-5 bg-transparent text-black rounded-md border-none outline-none' 
                     placeholder='Enter Message' 
                     value={message} 
                     onChange={(e) => setMessage(e.target.value)}
