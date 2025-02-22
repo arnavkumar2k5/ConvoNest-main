@@ -114,7 +114,7 @@ function MessageBar() {
                 formData.append("recipient", selectedChatData?._id);
     
                 const response = await axios.post(
-                    "http://localhost:8000/api/v1/messages/upload-file",
+                    "https://convonest-mn3l.onrender.com/api/v1/messages/upload-file",
                     formData,
                     {
                         withCredentials: true,
